@@ -88,7 +88,12 @@ textarea {
 /* ================== */
 /* ----- GLOBAL >>>>> */
 
-p {
+h1,
+h2,
+h3,
+h4,
+p,
+figure {
   margin: 0;
 }
 
@@ -142,8 +147,6 @@ header ul {
   justify-content: space-evenly;
 }
 
-header ul li {}
-
 header nav a {
   padding: inherit;
   text-decoration: none;
@@ -152,13 +155,23 @@ header nav a {
 /* FOOTER */
 footer {
   display: flex;
+  justify-content: center;
   flex-direction: column;
   align-items: center;
   text-align: center;
 }
 
 footer .content-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+footer .footer-content {
   width: 55%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 footer h4 {
@@ -201,10 +214,17 @@ aside {
   justify-content: center;
 }
 
+/* aside form {
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+} */
+
 /* FEATURES */
 .features {
   display: flex;
   justify-content: center;
+  justify-items: flex-start;
 }
 
 .features h2 {
@@ -220,6 +240,7 @@ aside {
 
 .features article {
   width: 63%;
+  text-align: center;
 }
 
 .features .fontawesome-icon {
@@ -371,15 +392,156 @@ aside {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+@media only screen and (min-width: 768px) {
+
+  /* ==== Tablet Style Here ==== */
+
+  /* GLOBAL */
+
+  .content-wrapper {
+    padding: 100px 0;
+  }
+
+  /* HEADER */
+  .header-divider {
+    display: none;
+  }
+
+  header .content-wrapper {
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 33px 0;
+  }
+
+  header .logo {
+    width: 30%;
+  }
+
+  header nav {
+    width: 33%;
+    padding: 0;
+  }
+
+  header nav ul {
+    justify-content: space-around;
+  }
+
+  /* FOOTER */
+
+  footer .footer-content {
+    width: 90%;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: 0 10%;
+  }
+
+  footer h4 {
+    margin: 0 0 40px;
+  }
+
+  footer .footer-info {
+    /* width: 33%; */
+  }
+
+  footer .social {
+    /* width: 33%; */
+  }
+
+  /* ==========================================================================
+   Home Page
+   ========================================================================== */
+
+  .features .content-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+  }
+
+  .features .feature-items {
+    justify-content: center;
+    column-gap: 20%;
+  }
+
+  .features article {
+    width: 32%;
+  }
+
+  .features .fontawesome-icon {
+    margin: 0 0 30px;
+  }
+
+  .reviews .review-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .reviews .review-content figure {
+    width: 50%;
+  }
+
+  .reviews .review-content>div {
+    width: 48%;
+  }
+
+  /* ==========================================================================
+   About Page
+   ========================================================================== */
+
+  /* MISSION */
+
+  .mission .mission-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    column-gap: 5%
+  }
+
+  /* CONTACT-US */
+  .contact-us .contact-us-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  /* ==========================================================================
+   FAQs Page
+   ========================================================================== */
+
+  .faq .faq-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-flow: row wrap;
+  }
+
+  .faq .faq-item {
+    flex-basis: 45%;
+  }
+
+  /* === Tablet Style End */
 }
 
-@media print,
-(-webkit-min-device-pixel-ratio: 1.25),
-(min-resolution: 1.25dppx),
-(min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
+@media only screen and (min-width: 1200px) {
+
+  /* Desktop Style Here */
+
+  /* ==========================================================================
+   Home Page
+   ========================================================================== */
+
+  /* ==========================================================================
+   About Page
+   ========================================================================== */
+
+
+
+  /* ==========================================================================
+   FAQs Page
+   ========================================================================== */
+
+  /* === Desktop Style End */
 }
 
 /* ==========================================================================
