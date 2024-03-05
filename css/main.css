@@ -84,6 +84,155 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+
+/* ================== */
+/* ----- GLOBAL >>>>> */
+
+.content-wrapper {
+  width: 90%;
+  outline: 2px dotted violet;
+  /* For debugging purposes */
+}
+
+/* -------------------- Base Header - Footer Styles -------------------- */
+
+header {
+  display: flex;
+  justify-content: center;
+}
+
+header .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+header .logo {
+  width: 50%;
+  text-align: center;
+  margin: 0;
+  padding: 15px 0 10px;
+}
+
+/* header .header-divider {
+  width: 100%;
+  height: 2px;
+  background-color: #ccc;
+} */
+
+/* header nav {
+  padding: 20px 0 15px;
+} */
+
+header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+header ul li {}
+
+/* FOOTER */
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+footer .social-icons {
+  display: flex;
+  justify-content: space-around;
+
+
+}
+
+footer .social-icons p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* <<<<< GLOBAL ----- */
+/* ================== */
+
+/* ==========================================================================
+   Home Page
+   ========================================================================== */
+
+.hero-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+aside {
+  display: flex;
+  justify-content: center;
+}
+
+/* FEATURES */
+.features {
+  display: flex;
+  justify-content: center;
+}
+
+.features .feature-items {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-flow: column wrap;
+}
+
+.features article {
+  width: 60%;
+}
+
+/* REVIEWS */
+.reviews {
+  display: flex;
+  justify-content: center;
+}
+
+/* ==========================================================================
+   ABOUT Page
+   ========================================================================== */
+
+
+/* MISSION */
+.mission {
+  display: flex;
+  justify-content: center;
+}
+
+/* CONTACT-US */
+.contact-us {
+  display: flex;
+  justify-content: center;
+}
+
+
+/* ==========================================================================
+   FAQs classes
+   ========================================================================== */
+
+/* FAQ */
+.faq {
+  display: flex;
+  justify-content: center;
+}
+
+.faq .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -172,9 +321,9 @@ textarea {
 }
 
 @media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */
 }
 
@@ -185,6 +334,7 @@ textarea {
    ========================================================================== */
 
 @media print {
+
   *,
   *::before,
   *::after {
@@ -244,4 +394,3 @@ textarea {
     page-break-after: avoid;
   }
 }
-
