@@ -91,13 +91,14 @@ textarea {
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
+  color: #e2e3ed;
+  /* Deafult text color */
 }
 
-h1,
-h2,
-h3,
-h4,
-p,
+a {
+  color: #e2e3ed;
+}
+
 figure {
   margin: 0;
 }
@@ -111,13 +112,13 @@ h1 {
 
 h2 {
   font-family: Poppins, sans-serif;
-  font-size: 1.87rem;
+  font-size: 1.875rem;
   font-weight: 500;
 }
 
 .reviews h2,
 .faq h2 {
-  line-height: 1.87rem;
+  line-height: 1.875rem;
 }
 
 h3 {
@@ -137,14 +138,11 @@ h4 {
 }
 
 p {
-  font-size: 0.875rem;
-  line-height: 1.125rem;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
 }
 
-nav a {
-  font-size: 1.125rem;
-  font-weight: 900;
-  color: #e2e3ed;
+a {
   text-decoration: none;
 }
 
@@ -165,11 +163,35 @@ address {
   font-style: normal;
 }
 
+.copyright p {
+  font-family: Poppins, sans-serif;
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
 .content-wrapper {
   width: 90%;
   padding: 50px 0;
-  outline: 2px dotted violet;
+  /* outline: 2px dotted violet; */
   /* For debugging purposes */
+}
+
+/* GLOBAL Background Colors */
+header,
+footer {
+  background-color: #202322;
+}
+
+.mission,
+.faq,
+aside,
+.social-icons {
+  background-color: #527158;
+}
+
+.reviews,
+.contact-us {
+  background-color: #2a423a;
 }
 
 /* -------------------- Base Header - Footer Styles -------------------- */
@@ -178,7 +200,6 @@ address {
 header {
   display: flex;
   justify-content: center;
-
 }
 
 header .content-wrapper {
@@ -189,22 +210,24 @@ header .content-wrapper {
   padding: 15px 0;
 }
 
-header .logo {
+header figure {
   width: 60%;
-  text-align: center;
   margin: 0;
+}
+
+figure img {
+  width: 100%;
 }
 
 header .header-divider {
   width: 100%;
   height: 2px;
   background-color: #3a3a3a;
-  margin-top: 10px;
+  margin: 10px 0 20px;
 }
 
 header nav {
   width: 60%;
-  padding: 20px 0 15px;
 }
 
 header ul {
@@ -212,11 +235,18 @@ header ul {
   padding: 0;
   list-style: none;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 
-header nav a {
-  padding: inherit;
+header ul li {
+  margin: 0;
+}
+
+nav a {
+  font-size: 1.125rem;
+  font-weight: 900;
+  color: #e2e3ed;
+  text-transform: uppercase;
 }
 
 /* FOOTER */
@@ -245,6 +275,15 @@ footer h4 {
   margin: 20px 0;
 }
 
+footer p {
+  margin: 0;
+}
+
+.footer-info,
+.social {
+  margin: 0 0 50px;
+}
+
 footer .social-icons {
   display: flex;
   justify-content: space-around;
@@ -257,10 +296,9 @@ footer .social-icons p {
 }
 
 footer .copyright {
+
   margin: 20px 0;
 }
-
-
 
 /* <<<<< GLOBAL ----- */
 /* ================== */
@@ -276,16 +314,44 @@ footer .copyright {
   flex-flow: row wrap;
 }
 
+/* ASIDE */
 aside {
   display: flex;
   justify-content: center;
 }
 
-/* aside form {
-  display: flex;
+aside h3 {
+  margin: 20px 0;
+}
+
+aside form {
+  margin: 30px 0 0;
+  /* display: flex;
   justify-content: center;
-  flex-flow: column;
-} */
+  flex-flow: column; */
+}
+
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
+}
+
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+}
 
 /* FEATURES */
 .features {
@@ -365,7 +431,7 @@ aside {
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
-  margin: 50px 0 0;
+  padding: 50px 0 0;
 }
 
 .faq h2 {
@@ -516,18 +582,18 @@ aside {
     padding: 33px 0;
   }
 
-  header .logo {
+  header figure {
     width: 30%;
   }
 
   header nav {
-    width: 33%;
+    width: 25%;
     padding: 0;
   }
 
-  header nav ul {
+  /* header nav ul {
     justify-content: space-around;
-  }
+  } */
 
   /* FOOTER */
 
@@ -540,6 +606,11 @@ aside {
 
   footer h4 {
     margin: 0 0 40px;
+  }
+
+  .footer-info,
+  .social {
+    margin: 0;
   }
 
   footer .footer-info {
