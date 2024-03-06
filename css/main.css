@@ -697,6 +697,10 @@ input[type=button] {
     column-gap: 5%
   }
 
+  .map-container {
+    padding-bottom: 45.57%;
+  }
+
   /* CONTACT-US */
   .contact-us .contact-us-content {
     display: flex;
@@ -779,6 +783,13 @@ input[type=button] {
     width: 20%;
   }
 
+  /* ==========================================================================
+   About Page - Desktop
+   ========================================================================== */
+
+  .map-container {
+    padding-bottom: 37.5%;
+  }
 
   /* === Desktop Style End */
 }
