@@ -99,6 +99,10 @@ a {
   color: #e2e3ed;
 }
 
+img {
+  width: 100%;
+}
+
 figure {
   margin: 0;
 }
@@ -215,10 +219,6 @@ header figure {
   margin: 0;
 }
 
-figure img {
-  width: 100%;
-}
-
 header .header-divider {
   width: 100%;
   height: 2px;
@@ -312,6 +312,9 @@ footer .copyright {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background: url('/img/unplugged-retreat.jpg') center no-repeat #333;
+  background-size: cover;
+  min-height: 500px;
 }
 
 /* ASIDE */
@@ -358,6 +361,8 @@ input[type=button] {
   display: flex;
   justify-content: center;
   justify-items: flex-start;
+  background: url('/img/unplugged-retreat-features.jpg') center no-repeat #333;
+  background-size: cover;
 }
 
 .features h2 {
@@ -624,6 +629,11 @@ input[type=button] {
   /* ==========================================================================
    Home Page
    ========================================================================== */
+
+
+  .hero-area {
+    min-width: 600px;
+  }
 
   .features .content-wrapper {
     display: flex;
