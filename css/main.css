@@ -159,7 +159,7 @@ input {
   font-size: 3.75rem;
 }
 
-.social-icons a {
+.social-icons p i {
   font-size: 1.3125rem;
 }
 
@@ -168,7 +168,6 @@ address {
 }
 
 .copyright p {
-  font-family: Poppins, sans-serif;
   font-size: 1.125rem;
   font-weight: 500;
 }
@@ -188,8 +187,7 @@ footer {
 
 .mission,
 .faq,
-aside,
-.social-icons {
+aside {
   background-color: #527158;
 }
 
@@ -259,12 +257,11 @@ footer {
 }
 
 footer .content-wrapper {
-  display: flex;
-  justify-content: center;
+  width: 65%;
 }
 
 footer .footer-content {
-  width: 55%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -286,17 +283,21 @@ footer p {
 
 footer .social-icons {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 18px;
 }
 
 footer .social-icons p {
+  background-color: #527158;
+  border-radius: 50%;
+  width: 40px;
+  aspect-ratio: 1/1;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 footer .copyright {
-
   margin: 20px 0;
 }
 
@@ -616,12 +617,15 @@ input[type=button] {
   } */
 
   /* FOOTER */
+  footer .content-wrapper {
+    width: 90%;
+  }
 
   footer .footer-content {
-    width: 90%;
+
     justify-content: space-between;
     flex-direction: row;
-    margin: 0 10%;
+    /* margin: 0 10%; */
   }
 
   footer h4 {
