@@ -264,7 +264,8 @@ footer .footer-content {
   width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
+  ;
   flex-direction: column;
 }
 
@@ -284,13 +285,13 @@ footer p {
 footer .social-icons {
   display: flex;
   justify-content: center;
-  gap: 18px;
+  gap: 30px;
 }
 
 footer .social-icons p {
   background-color: #527158;
   border-radius: 50%;
-  width: 40px;
+  width: 48px;
   aspect-ratio: 1/1;
   display: flex;
   justify-content: center;
@@ -586,7 +587,7 @@ input[type=button] {
   }
 
   footer p {
-    line-height: 1.1285;
+    /* line-height: 1.1285; */
   }
 
   .faq h4,
