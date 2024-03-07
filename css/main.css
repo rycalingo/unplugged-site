@@ -109,8 +109,8 @@ figure {
 
 h1 {
   font-family: Poppins, Helvetica, Arial, sans-serif;
-  font-size: 2.25rem;
-  line-height: 2.6875rem;
+  font-size: 2.125rem;
+  line-height: 1.194;
   font-weight: 500;
 }
 
@@ -122,7 +122,7 @@ h2 {
 
 .reviews h2,
 .faq h2 {
-  line-height: 1.875rem;
+  line-height: 1;
 }
 
 h3 {
@@ -138,12 +138,12 @@ h4 {
 }
 
 .faq-content .h4 {
-  font-size: 1.5rem;
+  line-height: 0.75;
 }
 
 p {
-  font-size: 1.125rem;
-  line-height: 1.5rem;
+  font-size: 0.875rem;
+  line-height: 1.286;
 }
 
 a {
@@ -242,7 +242,7 @@ header ul li {
 
 nav a {
   font-size: 1.125rem;
-  font-weight: 900;
+  font-weight: bold;
   color: #e2e3ed;
   text-transform: uppercase;
 }
@@ -546,6 +546,9 @@ input[type=button] {
    Modify as content requires.
    ========================================================================== */
 
+/* ==========================================================================
+   Tablet
+   ========================================================================== */
 @media only screen and (min-width: 768px) {
 
   /* ==== Tablet Style Here ==== */
@@ -554,18 +557,17 @@ input[type=button] {
 
   h1 {
     font-size: 3rem;
-    line-height: 3rem;
-
+    line-height: 1;
   }
 
   h2 {
     font-size: 2.25rem;
-    line-height: 3rem;
+    line-height: 1.333;
   }
 
   .reviews h2,
   .faq h2 {
-    line-height: 3rem;
+    line-height: 1;
   }
 
   h3 {
@@ -578,14 +580,19 @@ input[type=button] {
     font-size: 1.5rem;
   }
 
+  p {
+    font-size: 1.125rem;
+    line-height: 1.333;
+  }
+
   footer p {
-    line-height: 1.125rem;
+    line-height: 1.1285;
   }
 
   .faq h4,
   .faq p {
     font-size: 0.875rem;
-    line-height: 0.9843rem;
+    line-height: 0.1.125;
   }
 
   .content-wrapper {
@@ -619,13 +626,12 @@ input[type=button] {
   /* FOOTER */
   footer .content-wrapper {
     width: 90%;
+    padding: 50px 0;
   }
 
   footer .footer-content {
-
-    justify-content: space-between;
+    justify-content: space-around;
     flex-direction: row;
-    /* margin: 0 10%; */
   }
 
   footer h4 {
@@ -654,6 +660,20 @@ input[type=button] {
     min-width: 600px;
   }
 
+  aside .content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-direction: row;
+    padding: 50px 0;
+  }
+
+  aside .form-description,
+  aside .form {
+    width: 48%;
+  }
+
   .features .content-wrapper {
     display: flex;
     justify-content: center;
@@ -680,8 +700,12 @@ input[type=button] {
     justify-content: space-between;
   }
 
+  .reviews h3 {
+    margin: 0 0 20px;
+  }
+
   .reviews .review-content figure {
-    width: 50%;
+    width: 48%;
   }
 
   .reviews .review-content>div {
@@ -730,6 +754,9 @@ input[type=button] {
   /* === Tablet Style End */
 }
 
+/* ==========================================================================
+   Desktop
+   ========================================================================== */
 @media only screen and (min-width: 1200px) {
 
   /* Desktop Style Here */
@@ -751,7 +778,7 @@ input[type=button] {
 
   p {
     font-size: 1.125rem;
-    line-height: 1.5rem;
+    line-height: 1.333;
   }
 
   .mission h2,
@@ -762,17 +789,37 @@ input[type=button] {
   .faq h4,
   .faq p {
     font-size: 1.125rem;
-    line-height: 1.125rem;
+    line-height: 1;
   }
+
+
 
   /* HEADER */
   header .content-wrapper {
     padding: 15px 0;
   }
 
+  .content-wrapper {
+    max-width: 960px;
+  }
+
+  footer .footer-content {
+    justify-content: space-around;
+  }
+
   /* ==========================================================================
    Home Page - Desktop
    ========================================================================== */
+
+  aside .content-wrapper {
+    justify-content: space-around;
+    padding: 50px 0;
+  }
+
+  aside .form-description,
+  aside .form {
+    width: 40%;
+  }
 
   .reviews h2 {
     margin: 0 0 50px;
@@ -792,6 +839,7 @@ input[type=button] {
    ========================================================================== */
 
   .map-container {
+
     padding-bottom: 37.5%;
   }
 
